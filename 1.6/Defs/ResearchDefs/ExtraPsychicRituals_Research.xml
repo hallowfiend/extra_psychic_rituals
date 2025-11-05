@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- Basic -->
+	<ResearchProjectDef>
+		<defName>Gythian_FleshmassPulses</defName>
+		<label>psychorganic pulses</label>
+		<description>Perform psychic rituals that manipulate the body, either slowing it down to assist with healing or quickening it to increase movement speeds and lovin' chance.</description>
+		<tab>Anomaly</tab>
+		<prerequisites>
+			<li>PleasurePulse</li>
+			<li>NeurosisPulse</li>
+		</prerequisites>
+		<knowledgeCost>50</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.20</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->psychorganic pulses</li>
+				<li>subject->para- and sympathetic nervous system manipulation</li>
+				<li>subject->endocrine-affecting psychic resonance</li>
+
+				<li>subject_story->studied the "thirsting" cults of Grail IV</li>
+				<li>subject_story->performed experiments on immortalized cell lines</li>
+				<li>subject_story->led research into suspended animation on a world where cryptosleep was yet to be discovered</li>
+				<li>subject_story->created a minor religion venerating "The Heart", an entity described as both bleeding and beating eternally</li>
+				<li>subject_story->regularly dreamt of being born and unborn</li>
+				<li>subject_story->attempted to breed or otherwise proliferate fleshbeasts</li>
+
+				<li>subject_gerund->utilizing psychic influence to affect flesh</li>
+				<li>subject_gerund->performing a ritual to boost wound healing at the cost of tiredness</li>
+				<li>subject_gerund->performing a ritual to compel flesh towards other flesh</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+</Defs>

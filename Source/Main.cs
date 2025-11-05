@@ -14,9 +14,8 @@ using Verse.Grammar;
 using RimWorld;
 using RimWorld.Planet;
 
-// *Uncomment for Harmony*
-// using System.Reflection;
-// using HarmonyLib;
+using System.Reflection;
+using HarmonyLib;
 
 namespace Template
 {

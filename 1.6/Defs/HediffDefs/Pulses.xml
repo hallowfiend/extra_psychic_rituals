@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>Gythian_RecuperationPulse</defName>
+		<label>recuperation pulse</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person has been affected by a psychorganic pulse which affects their sympathetic nervous system and various bodily functions, including metabolism. This makes them sleepy and lethargic, but stimulates their immune system and decreases their need for food.</description>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<socialFightChanceFactor>0.0</socialFightChanceFactor>
+				<statFactors>
+					<InjuryHealingFactor>2.0</InjuryHealingFactor>
+					<ImmunityGainSpeed>1.20</ImmunityGainSpeed>
+					<RestFallRateFactor>1.30</RestFallRateFactor>
+					<HungerRate>0.80</HungerRate>
+					<SEX_IntimacyNeedRate MayRequire="LovelyDovey.Sex.WithEuterpe">0.5</SEX_IntimacyNeedRate>
+					<Hauts_PsyfocusRegenRate MayRequire="Hautarche.HautsFramework" MayRequireAnyOf="Ludeon.Rimworld.Royalty,Ludeon.Rimworld.Biotech">0.10</Hauts_PsyfocusRegenRate>
+				</statFactors>
+				<statOffsets>
+					<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+					<MoveSpeed>-0.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	<HediffDef MayRequire="Ludeon.Rimworld.Biotech">
+		<defName>Gythian_ProliferationPulse</defName>
+		<label>proliferation pulse</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person has been affected by a psychorganic pulse which affects their parasympathetic nervous system and various bodily functions, including hormonal balance. This increases their arousal and fertility, as well as aggression.</description>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<socialFightChanceFactor>2.0</socialFightChanceFactor>
+				<statFactors>
+					<Fertility>1.5</Fertility>
+					<VEF_MTBLovinFactor>0.25</VEF_MTBLovinFactor>
+					<RestFallRateFactor>0.5</RestFallRateFactor>
+					<SEX_IntimacyNeedRate MayRequire="LovelyDovey.Sex.WithEuterpe">2.0</SEX_IntimacyNeedRate>
+					<HungerRate>1.3</HungerRate>
+				</statFactors>
+				<statOffsets>
+					<Fertility>0.2</Fertility>
+					<MoveSpeed>0.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+	</HediffDef>
+</Defs>

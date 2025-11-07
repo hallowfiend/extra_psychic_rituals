@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<DownwardMindhexLargeInfestation>{0_nameDef} has completed {RITUAL_definite} ritual with impressive power and precision! The mindhex has hit a massive underground hive, attracting about double the insectoids that would've showed up otherwise. Prepare for the swarm!</DownwardMindhexLargeInfestation>
+	<DownwardMindhexInfestation>{0_nameDef} has completed {RITUAL_definite} ritual; the mindhex has hit an underground insectoid hive. They will burrow upwards shortly, frenzied by dark archotech energies.</DownwardMindhexInfestation>
+</LanguageData>

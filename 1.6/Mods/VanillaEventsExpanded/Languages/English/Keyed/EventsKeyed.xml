@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<SkywardMindhexSpaceBattle>{0_nameDef} has completed {RITUAL_definite} ritual with impressive power and precision! The mindhex has hit a massive spacefleet, causing madness in ship captains! A full-on space battle will soon occur!</SkywardMindhexSpaceBattle>
+	<SkywardMindhexShuttleCrash>{0_nameDef} has completed {RITUAL_definite} ritual; the mindhex has hit a shuttle in orbit. They will crash shortly, as its pilot struggles to keep themself anchored in reality.</SkywardMindhexShuttleCrash>
+</LanguageData>

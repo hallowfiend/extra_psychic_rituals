@@ -38,7 +38,7 @@ namespace Gythian_ExtraPsychicRituals
             {
                 if (((double)pawn.GetStatValue(StatDefOf.PsychicSensitivity) > 0.0) && pawn.Faction?.HostileTo(Faction.OfPlayer) == true)
                 {
-                    Hediff hediff = HediffMaker.MakeHediff(InternalDefOf.Gythian_MaddeningMindhex, pawn);
+                    Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named("Gythian_MaddeningMindhex"), pawn);
                     HediffComp_Disappears comp = hediff.TryGetComp<HediffComp_Disappears>();
                     if (comp != null)
                         comp.ticksToDisappear = Mathf.RoundToInt(duration * 2500f);
@@ -49,7 +49,7 @@ namespace Gythian_ExtraPsychicRituals
             {
                 {
                     if (!allFaction.IsPlayer && !allFaction.defeated && !allFaction.HostileTo(Faction.OfPlayer))
-                        Faction.OfPlayer.TryAffectGoodwillWith(allFaction, goodwill, reason: InternalDefOf.Gythian_MindhexEchoes);
+                        Faction.OfPlayer.TryAffectGoodwillWith(allFaction, goodwill, reason: DefDatabase<HistoryEventDef>.GetNamed("Gythian_MindhexEchoes"));
                 }
             }
             Find.LetterStack.ReceiveLetter("PsychicRitualCompleteLabel".Translate((NamedArgument)psychicRitual.def.label), "AreaMindhexCompleteText".Translate((NamedArgument)(Thing)invoker, (NamedArgument)Mathf.FloorToInt(duration * 60000f).ToStringTicksToDays(), psychicRitual.def.Named("RITUAL")), LetterDefOf.NeutralEvent);

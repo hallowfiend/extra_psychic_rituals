@@ -17,10 +17,10 @@ namespace Gythian_ExtraPsychicRituals
             }
             List<HediffDef> pulseList = new List<HediffDef>
             {
-                HediffDefOf.NeurosisPulse,
-                HediffDefOf.PleasurePulse,
-                InternalDefOf.Gythian_ProliferationPulse,
-                InternalDefOf.Gythian_RecuperationPulse
+                HediffDef.Named("NeurosisPulse"),
+                HediffDef.Named("PleasurePulse"),
+                HediffDef.Named("Gythian_ProliferationPulse"),
+                HediffDef.Named("Gythian_RecuperationPulse")
             };
             var pulses = hediffdefs.Intersect(pulseList);
             return pulses.Any();

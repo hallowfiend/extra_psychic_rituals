@@ -38,17 +38,16 @@ namespace Gythian_ExtraPsychicRituals
                 {
                     List<HediffDef> pulseList = new List<HediffDef>
                         {
-                    HediffDefOf.NeurosisPulse,
-                    HediffDefOf.PleasurePulse,
-                    InternalDefOf.Gythian_ProliferationPulse,
-                    InternalDefOf.Gythian_RecuperationPulse
+                    HediffDef.Named("NeurosisPulse"),
+                    HediffDef.Named("PleasurePulse"),
+                    HediffDef.Named("Gythian_RecuperationPulse")
                         };
                     if (HoraxianUtilities.HasAnyPulse(pawn) == true)
                         foreach (Hediff pawnhediff in pawn.health.hediffSet.hediffs)
                             foreach (HediffDef pulse in pulseList)
                                 if (pawnhediff.def == pulse)
                                     pawn.health.RemoveHediff(pawnhediff);
-                    Hediff hediff = HediffMaker.MakeHediff(InternalDefOf.Gythian_ProliferationPulse, pawn);
+                    Hediff hediff = HediffMaker.MakeHediff(HediffDef.Named("Gythian_ProliferationPulse"), pawn);
                     HediffComp_Disappears comp = hediff.TryGetComp<HediffComp_Disappears>();
                     if (comp != null)
                         comp.ticksToDisappear = Mathf.RoundToInt(duration * 60000f);

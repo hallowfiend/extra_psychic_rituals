@@ -9,4 +9,14 @@
 			</discoveredResearchProjects>
 		</value>
 	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<success>Always</success>
+		<xpath>/Defs/EntityCodexEntryDefs[defName= "BloodRain"]</xpath>
+		<value>
+			<discoveredResearchProjects>
+				<li>Gythian_Mindhexes</li>
+			</discoveredResearchProjects>
+		</value>
+	</Operation>
 </Patch>

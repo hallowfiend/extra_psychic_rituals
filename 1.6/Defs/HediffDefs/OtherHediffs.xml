@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<HediffDef>
+		<defName>Gythian_MaddeningMindhex</defName>
+		<label>maddening mindhex</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<description>This person has been affected by a droning, maddening mindhex: a lingering projection of a fragment of an archotech's insane mind. The human mind is not equipped to handle such things.</description>
+		<everCurableByItem>false</everCurableByItem>
+		<stages>
+			<li>
+				<statOffsets>
+					<MentalBreakThreshold>0.4</MentalBreakThreshold>
+				</statOffsets>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<offset>-0.10</offset>
+					</li>
+				</capMods>
+				<blocksSleeping>true</blocksSleeping>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath" />
+		</comps>
+	</HediffDef>
+	
+	<!-- Thoughts -->
+	<ThoughtDef>
+		<defName>Gythian_MindhexMadness</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>Gythian_MaddeningMindhex</hediff>
+		<effectMultiplyingStat>PsychicSensitivity</effectMultiplyingStat>
+		<validWhileDespawned>true</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+			<li>
+				<label>maddening mindhex</label>
+				<description>Nonononononononononihwfgydehisu8y7r3gdeswdf1nj8748*!){</description>
+				<baseMoodEffect>-50</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+</Defs>	

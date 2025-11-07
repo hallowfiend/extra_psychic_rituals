@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<!-- Basic -->
 	<ResearchProjectDef>
 		<defName>Gythian_FleshmassPulses</defName>
 		<label>psychorganic pulses</label>
@@ -25,11 +24,44 @@
 				<li>subject_story->led research into suspended animation on a world where cryptosleep was yet to be discovered</li>
 				<li>subject_story->created a minor religion venerating "The Heart", an entity described as both bleeding and beating eternally</li>
 				<li>subject_story->regularly dreamt of being born and unborn</li>
-				<li>subject_story->attempted to breed or otherwise proliferate fleshbeasts</li>
+				<li>subject_story->attempted to breed fleshbeasts</li>
 
 				<li>subject_gerund->utilizing psychic influence to affect flesh</li>
 				<li>subject_gerund->performing a ritual to boost wound healing at the cost of tiredness</li>
 				<li>subject_gerund->performing a ritual to compel flesh towards other flesh</li>
+			</rulesStrings>
+		</generalRules>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>Gythian_Mindhexes</defName>
+		<label>mindhexes</label>
+		<description>Perform psychic rituals to generate directional and specified pulses of strong emotion, to provoke various events or drive enemies to madness.</description>
+		<tab>Anomaly</tab>
+		<prerequisites>
+			<li>AdvancedPsychicRituals</li>
+		</prerequisites>
+		<knowledgeCost>50</knowledgeCost>
+		<knowledgeCategory>Advanced</knowledgeCategory>
+		<researchViewX>7.00</researchViewX>
+		<researchViewY>0.30</researchViewY>
+		<generalRules>
+			<rulesStrings>
+				<li>subject->mindhexes</li>
+				<li>subject->directional psychic pulses</li>
+				<li>subject->psychic convocation</li>
+
+				<li>subject_story->analyzed the cross-cultural similarities in traditional protective charms</li>
+				<li>subject_story->witnessed half of a mighty fleet crashland after being hit with a strange psychic wave</li>
+				<li>subject_story->experimented with new ways of serketist veneration</li>
+				<li>subject_story->felt the psychic echoes of a neuroquake</li>
+				<li>subject_story->studied berserk states in a fringe midworld academy</li>
+				<li>subject_story->witnessed a Horax cult direct a mindhex the wrong way and end up eaten by insectoids</li>
+
+				<li>subject_gerund->performing a ritual to generate a highly directional psychic pulse</li>
+				<li>subject_gerund->convoking directed psychic pulses</li>
+				<li>subject_gerund->mindhexing</li>
+				<li>subject_gerund->casting mindhexes</li>
 			</rulesStrings>
 		</generalRules>
 	</ResearchProjectDef>

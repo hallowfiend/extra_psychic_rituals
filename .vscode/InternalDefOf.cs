@@ -1,9 +1,4 @@
 ﻿using RimWorld;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Verse;
 
 namespace Gythian_ExtraPsychicRituals
@@ -13,5 +8,7 @@ namespace Gythian_ExtraPsychicRituals
     {
         public static HediffDef Gythian_RecuperationPulse;
         public static HediffDef Gythian_ProliferationPulse;
+        public static HediffDef Gythian_MaddeningMindhex;
+        public static HistoryEventDef Gythian_MindhexEchoes;
     }
 }

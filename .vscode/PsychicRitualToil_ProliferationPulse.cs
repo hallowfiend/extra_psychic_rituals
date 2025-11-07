@@ -48,7 +48,7 @@ namespace Gythian_ExtraPsychicRituals
                             foreach (HediffDef pulse in pulseList)
                                 if (pawnhediff.def == pulse)
                                     pawn.health.RemoveHediff(pawnhediff);
-                    Hediff hediff = HediffMaker.MakeHediff(InternalDefOf.ProliferationPulse, pawn);
+                    Hediff hediff = HediffMaker.MakeHediff(InternalDefOf.Gythian_ProliferationPulse, pawn);
                     HediffComp_Disappears comp = hediff.TryGetComp<HediffComp_Disappears>();
                     if (comp != null)
                         comp.ticksToDisappear = Mathf.RoundToInt(duration * 60000f);

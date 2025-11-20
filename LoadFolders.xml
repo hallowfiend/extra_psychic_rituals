@@ -1,5 +1,7 @@
 <loadFolders>
 <v1.6>
 	<li IfModActive="OskarPotocki.VFE.Insectoid2">1.6/Mods/VanillaInsectoidsExpanded</li>
+	<li IfModActive="vanillaexpanded.vee">1.6/Mods/VanillaEventsExpanded</li>
+	<li IfModActive="vanillaexpanded.vpsycastse">1.6/Mods/VanillaPsycastsExpanded</li>
 </v1.6>
 </loadFolders>

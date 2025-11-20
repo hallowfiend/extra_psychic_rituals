@@ -3,7 +3,7 @@
 	<PsychicRitualDef_DownwardMindhex>
 		<defName>Gythian_DownwardMindhex</defName>
 		<label>downward mindhex</label>
-		<description>Convoke a highly directed psychic pulse into the depths of the earth, tuned to underground insectoids. The pulse drives the insectoids into a feeding frenzy, causing a hostile infestation. The infestation can be cleared for insect meat, chitin and jelly; you could attempt to tame the insects; or they can act as a self-replenishing defense. Depending on ritual quality, the chance has an infestation to be twice the size it would've been otherwise. Unlike other mindhexes, this ritual has no diplomatic consequences, due to the direction of convocation.</description>
+		<description>Convoke a highly directed psychic pulse into the depths of the earth, tuned to underground insectoids. The pulse drives the insectoids into a feeding frenzy, causing a hostile infestation. The infestation can be cleared for insect meat, chitin and jelly; you could attempt to tame the insects; or they can act as a self-replenishing defense. Depending on ritual quality, the infestation has a chance to be twice the size it would've been otherwise. Unlike other mindhexes, this ritual has no diplomatic consequences, due to the direction of convocation.</description>
 		<researchPrerequisite>Gythian_Mindhexes</researchPrerequisite>
 		<outcomeDescription>With the current ritual quality, the infestation has a {0} chance to double in size.</outcomeDescription>
 		<hoursUntilOutcome>4</hoursUntilOutcome>
@@ -24,7 +24,7 @@
 					<li>VFEI2_RoyalInsectJelly</li>
 				</thingDefs>
 			</filter>
-			<count>10</count>
+			<count>20</count>
 		</requiredOffering>
 		<cooldownHours>240</cooldownHours>
 		<iconPath>UI/PsychicRituals/PsychicRitual_SummonAnimals</iconPath>

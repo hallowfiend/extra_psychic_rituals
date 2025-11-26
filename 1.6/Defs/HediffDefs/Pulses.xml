@@ -30,7 +30,7 @@
 		</comps>
 	</HediffDef>
 	
-	<HediffDef MayRequire="Ludeon.Rimworld.Biotech">
+	<HediffDef>
 		<defName>Gythian_ProliferationPulse</defName>
 		<label>proliferation pulse</label>
 		<hediffClass>HediffWithComps</hediffClass>
@@ -40,7 +40,7 @@
 			<li>
 				<socialFightChanceFactor>2.0</socialFightChanceFactor>
 				<statFactors>
-					<Fertility>1.5</Fertility>
+					<Fertility MayRequire="Ludeon.Rimworld.Biotech">1.5</Fertility>
 					<VEF_MTBLovinFactor>0.25</VEF_MTBLovinFactor>
 					<RestFallRateFactor>0.5</RestFallRateFactor>
 					<SEX_IntimacyNeedRate MayRequire="LovelyDovey.Sex.WithEuterpe">2.0</SEX_IntimacyNeedRate>

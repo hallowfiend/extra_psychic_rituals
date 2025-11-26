@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	<!-- Recuperation -->
-	<PsychicRitualDef_RecuperationPulse>
+	<Gythian_ExtraPsychicRituals.PsychicRitualDef_RecuperationPulse>
 		<defName>Gythian_RecuperationPulse_Ritual</defName>
 		<label>recuperation pulse</label>
 		<description>Emit an intense psychorganic pulse that makes any psychically sensitive individual in the region lethargic, but allows their bodies to rest and heal from injuries faster. This will replace the effect of other active pulses, and if a recuperation pulse is already active, refresh its duration.</description>
@@ -27,9 +27,9 @@
 		<cooldownHours>120</cooldownHours>
 		<chanterRole>ChanterAdvanced</chanterRole>
 		<iconPath>UI/PsychicRituals/PsychicRitual_PleasurePulse</iconPath> <!-- placeholder -->
-	</PsychicRitualDef_RecuperationPulse>
+	</Gythian_ExtraPsychicRituals.PsychicRitualDef_RecuperationPulse>
 	<!-- Proliferation -->
-	<PsychicRitualDef_ProliferationPulse MayRequire="Ludeon.Rimworld.Biotech">
+	<Gythian_ExtraPsychicRituals.PsychicRitualDef_ProliferationPulse>
 		<defName>Gythian_ProliferationPulse_Ritual</defName>
 		<label>proliferation pulse</label>
 		<description>Emit an intense psychorganic pulse that makes any psychically sensitive individual in the region aggressive and active, but also increases fertility and lovin' chance drastically by manipulating the endocrine system. This will replace the effect of other active pulses, and if a proliferation pulse is already active, refresh its duration.</description>
@@ -55,5 +55,5 @@
 		<cooldownHours>120</cooldownHours>
 		<chanterRole>ChanterAdvanced</chanterRole>
 		<iconPath>UI/PsychicRituals/PsychicRitual_PleasurePulse</iconPath> <!-- placeholder -->
-	</PsychicRitualDef_ProliferationPulse>
+	</Gythian_ExtraPsychicRituals.PsychicRitualDef_ProliferationPulse>
 </Defs>

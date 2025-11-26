@@ -3,5 +3,5 @@
 	<DownwardMindhexLargeInfestation>{0_nameDef} has completed {RITUAL_definite} ritual with impressive power and precision! The mindhex has hit a massive underground hive, attracting about double the insectoids that would've showed up otherwise. Prepare for the swarm!</DownwardMindhexLargeInfestation>
 	<DownwardMindhexInfestation>{0_nameDef} has completed {RITUAL_definite} ritual; the mindhex has hit an underground insectoid hive. They will burrow upwards shortly, frenzied by dark archotech energies.</DownwardMindhexInfestation>
 	
-	<NoBugsHere>No nearby insectoids.</NoBugsHere>
+	<PsychicRitualLeaveReason_NotPsycaster>{PAWN_labelShort} does not have a psylink</PsychicRitualLeaveReason_NotPsycaster>
 </LanguageData>

@@ -9,12 +9,16 @@
 		<stages>
 			<li>
 				<statOffsets>
-					<MentalBreakThreshold>0.4</MentalBreakThreshold>
+					<MentalBreakThreshold>0.5</MentalBreakThreshold>
 				</statOffsets>
 				<capMods>
 					<li>
 						<capacity>Consciousness</capacity>
 						<offset>-0.10</offset>
+					</li>
+					<li>
+						<capacity>Manipulation</capacity>
+						<offset>-0.20</offset>
 					</li>
 				</capMods>
 				<blocksSleeping>true</blocksSleeping>

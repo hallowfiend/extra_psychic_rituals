@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Ritual -->
+	<Gythian_ExtraPsychicRituals.PsychicRitualDef_Thaumaphagy>
+		<defName>Gythian_Thaumaphagy_Ritual</defName>
+		<label>thaumaphagy</label>
+		<description>Redirect a target's connection to the archotechs towards the invoker, erasing their psylink and increasing the psylink level of the invoker. Both the target and invoker must already have a psylink, as this ritual cannot manipulate a connection that doesn't exist.\nThe target will suffer brain damage, become psychically dead and fall into a coma.</description>
+		<researchPrerequisite>Psychophagy</researchPrerequisite>
+		<outcomeDescription>At the current ritual quality, the invoker will steal {0} of the target's psycasting experience.\nThe target will lose their psylink, suffer brain damage and fall into a coma; they will also become psychically dead.</outcomeDescription>
+		<targetRole>ThaumaphagyTarget</targetRole>
+		<invokerRole>ThaumaphagyInvoker</invokerRole>
+		<hoursUntilOutcome>4</hoursUntilOutcome>
+		<requiredOffering>
+		<filter>
+			<thingDefs>
+				<li>Shard</li>
+			</thingDefs>
+		</filter>
+		<count>1</count>
+		</requiredOffering>
+		<brainDamageRange>2~6</brainDamageRange>
+		<psyxpTransferFromQualityCurve>
+			<points>
+				<li>(0, 0.1)</li>
+				<li>(0.5, 0.4)</li>
+				<li>(0.9, 0.6)</li>
+				<li>(1, 0.75)</li>
+			</points>
+		</psyxpTransferFromQualityCurve>
+		<cooldownHours>240</cooldownHours>
+		<iconPath>UI/PsychicRituals/PsychicRitual_Psychophagy</iconPath> <!-- placeholder -->
+	</Gythian_ExtraPsychicRituals.PsychicRitualDef_Thaumaphagy>
+	
+	<!-- Roles -->
+	<Gythian_ExtraPsychicRituals.PsychicRitualRoleDef_PsycasterRole>
+    <defName>ThaumaphagyInvoker</defName>
+    <label>invoker</label>
+    <allowedCount>1</allowedCount>
+    <canHandleOfferings>true</canHandleOfferings>
+    <showInvocationVfx>true</showInvocationVfx>
+    <allowedConditions>DefaultInvoker</allowedConditions>
+  </Gythian_ExtraPsychicRituals.PsychicRitualRoleDef_PsycasterRole>
+  
+  <Gythian_ExtraPsychicRituals.PsychicRitualRoleDef_PsycasterRole>
+    <defName>ThaumaphagyTarget</defName>
+    <label>invoker</label>
+    <allowedCount>1</allowedCount>
+    <allowedConditions>Default, Downed, Prisoner, Sleeping, IdeoUnwilling</allowedConditions>
+    <applyPowerOffset>false</applyPowerOffset>
+    <removeOnLost>false</removeOnLost>
+  </Gythian_ExtraPsychicRituals.PsychicRitualRoleDef_PsycasterRole>
+  
+</Defs>

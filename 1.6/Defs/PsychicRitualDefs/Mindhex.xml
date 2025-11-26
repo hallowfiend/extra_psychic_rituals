@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	<PsychicRitualDef_AreaMindhex>
+	<Gythian_ExtraPsychicRituals.PsychicRitualDef_AreaMindhex>
 		<defName>Gythian_AreaMindhex</defName>
 		<label>area mindhex</label>
-		<description>Convoke a highly directed psychic pulse targeting the area of the colony, tuned to those hostile to the invoker. The pulse acts as a heavy psychic drone, driving people to madness. The residual energies of this ritual will echo for countless kilometers, causing diplomatic consequences with all factions.</description>
+		<description>Convoke a highly directed psychic pulse targeting the area of the colony, tuned to those hostile to the invoker. The pulse acts as a heavy psychic drone, driving people to madness.\nThe residual energies of this ritual will echo for countless kilometers, causing diplomatic consequences with all factions.</description>
 		<researchPrerequisite>Gythian_Mindhexes</researchPrerequisite>
 		<outcomeDescription>With the current ritual quality, the mindhex will last {0}.</outcomeDescription>
 		<hoursUntilOutcome>1</hoursUntilOutcome>
@@ -26,5 +26,10 @@
 		</requiredOffering>
 		<cooldownHours>480</cooldownHours>
 		<iconPath>UI/PsychicRituals/PsychicRitual_SummonAnimals</iconPath> <!-- placeholder -->
-	</PsychicRitualDef_AreaMindhex>
+	</Gythian_ExtraPsychicRituals.PsychicRitualDef_AreaMindhex>
+	
+	<HistoryEventDef>
+    <defName>Gythian_MindhexEchoes</defName>
+    <label>mindhex echoes</label>
+  </HistoryEventDef>
 </Defs>

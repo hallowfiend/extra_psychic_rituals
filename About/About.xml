@@ -26,4 +26,15 @@
 		</li>
 	</modDependencies>
 	<description>Template</description>
+	
+	<loadAfter>
+		<li>brrainz.harmony</li>
+		<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+		<li>LovelyDovey.Sex.WithEuterpe</li>
+		<li>LovelyDovey.Sex.WithRosaline</li>
+		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>OskarPotocki.VFE.Insectoid2</li>
+		<li>vanillaexpanded.vee</li>
+		<li>vanillaexpanded.vpsycastse</li>
+	</loadAfter>
 </ModMetaData>
